@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 400px;
+    }
+
+    #details {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Welcome</h2>
+  <button onclick="showDetails()">Login</button>
+
+  <div id="details">
+    <h3>About Me</h3>
+    <p>Hello! I am Sivananda C.S. I am a first-year B.Tech student specializing in Computer Science at Vimal Jyothi Engineering College. I am passionate about technology, coding, and learning new things in the field of computing. My current academic journey is focused on building a strong foundation in programming, software development, and understanding how computers work at a deeper level.</p>
+  </div>
+</div>
+
+<script>
+  function showDetails() {
+    const details = document.getElementById('details');
+    details.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
